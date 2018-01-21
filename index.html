@@ -1,0 +1,75 @@
+
+<html>
+    
+    <head>
+    
+        <style>
+            * {
+                margin: 5%;
+                padding: 0%;
+            }
+    
+            h1 {
+                color: white;
+                font-size: 50px;
+            }
+    
+    
+            button {
+    
+                font-size: 25px;
+    
+            }
+    
+            #password {
+    
+                background-color: yellow;
+                font-size: 23px;
+                width: 22%;
+                display: inline-block;
+    
+            }
+    
+            #container {
+    
+                border-style: solid;
+                border-color: white;
+                align-content: space-between;
+            }
+     
+        </style>
+    
+    
+    </head>
+    
+    <body style="background-color: black;">
+    
+        <div id="container">
+    
+            <h1> Password</h1>
+    
+            <h2 style="color: white;">Press the button for password</h2>
+    
+            </br>
+    
+            <div id="password">
+                Press the button below
+            </div>
+    
+            </br>
+    
+            <button onclick="myFunction()">Create password</button>
+    
+        </div>
+    
+        <script>
+            function myFunction() {
+    
+                document.getElementById("password").innerHTML = Math.random().toString(36).substring(2, 10);
+            }
+        </script>
+    
+    </body>
+    
+    
+    </html>
